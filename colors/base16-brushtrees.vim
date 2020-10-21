@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Brush Trees scheme by Abraham White &lt;abelincoln.white@gmail.com&gt;
+" Brush Trees scheme by Abraham White <abelincoln.white@gmail.com>
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -10,7 +10,7 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-brushtrees.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-{{scheme-slug}}.sh"
   endif
 endif
 
@@ -145,7 +145,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-brushtrees"
+let g:colors_name = "base16-{{scheme-slug}}"
 
 " Highlighting function
 " Optional variables are attributes and guisp
