@@ -10,7 +10,7 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-base16-chalk.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-chalk.sh"
   endif
 endif
 
@@ -145,7 +145,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-base16-chalk"
+let g:colors_name = "base16-chalk"
 
 " Highlighting function
 " Optional variables are attributes and guisp
